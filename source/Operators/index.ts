@@ -1,4 +1,5 @@
 export {Operator} from './Operator';
+export {Crop} from './Crop';
 export {Flip} from './Flip';
 export {Rotate, Shear as RotateShear} from './Rotate';
 export {Resize} from './Resize';
