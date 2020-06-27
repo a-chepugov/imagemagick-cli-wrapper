@@ -18,4 +18,4 @@ export * as Output from './Output';
 export {Parameters} from './Parameters';
 
 export {FORMATS} from './FORMATS';
-
+export * as Geometry from './Geometry';
