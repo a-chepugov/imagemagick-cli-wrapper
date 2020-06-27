@@ -1,4 +1,5 @@
 export {Setting} from './Setting';
+export {Antialias} from './Antialias';
 export {Fill} from './Fill';
 export {Font} from './Font';
 export {Gravity, Type as GravityType} from './Gravity';
