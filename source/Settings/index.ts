@@ -2,6 +2,7 @@ export {Setting} from './_Setting';
 export {Antialias} from './Antialias';
 export {Fill} from './Fill';
 export {Font} from './Font';
+export {Format} from './Format';
 export {Gravity, Type as GravityType} from './Gravity';
 export {Interlace, Type as InterlaceType} from './Interlace';
 export {Monitor} from './Monitor';
