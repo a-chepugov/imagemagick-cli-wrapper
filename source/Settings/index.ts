@@ -1,4 +1,4 @@
-export {Setting} from './Setting';
+export {Setting} from './_Setting';
 export {Antialias} from './Antialias';
 export {Fill} from './Fill';
 export {Font} from './Font';

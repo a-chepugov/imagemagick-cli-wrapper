@@ -1,5 +1,5 @@
 import ReadableStream = NodeJS.ReadableStream;
-import Output from "./Output";
+import Output from "./_Output";
 
 export class Filename implements Output {
 	private readonly name: string;

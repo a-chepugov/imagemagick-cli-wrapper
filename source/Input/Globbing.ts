@@ -1,5 +1,5 @@
 import WritableStream = NodeJS.WritableStream;
-import Input from "./Input";
+import Input from "./_Input";
 
 export class Globbing implements Input {
 	private readonly name: string;

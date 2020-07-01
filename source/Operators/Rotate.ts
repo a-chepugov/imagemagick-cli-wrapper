@@ -1,4 +1,4 @@
-import Operator from "./Operator";
+import Operator from "./_Operator";
 
 export enum Shear {
 	">" = ">",

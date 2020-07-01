@@ -1,7 +1,7 @@
-import Operator from "./Operator";
+import SequenceOperator from "./_SequenceOperator";
 import {Geometry} from "../Geometry";
 
-export class Crop implements Operator {
+export class Crop implements SequenceOperator {
 	private readonly geometry: Geometry;
 	private readonly tiles: boolean;
 	private readonly emphatically: boolean;

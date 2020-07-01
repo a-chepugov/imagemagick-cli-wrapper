@@ -1,4 +1,4 @@
-import SequenceOperator from "./SequenceOperator";
+import SequenceOperator from "./_SequenceOperator";
 
 export class Delete implements SequenceOperator {
 	private readonly index: number;

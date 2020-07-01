@@ -1,7 +1,7 @@
 import ReadableStream = NodeJS.ReadableStream;
 import WritableStream = NodeJS.WritableStream;
 
-import Output from "./Output";
+import Output from "./_Output";
 import FORMATS from "../FORMATS";
 
 export class STDOUT implements Output {

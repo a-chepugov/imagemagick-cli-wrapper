@@ -1,4 +1,4 @@
-import Operator from "./Operator";
+import Operator from "./_Operator";
 import {Geometry} from "../Geometry";
 
 export class Resize implements Operator {

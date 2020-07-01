@@ -1,6 +1,6 @@
 import ReadableStream = NodeJS.ReadableStream;
 
-import Output from "./Output";
+import Output from "./_Output";
 import FORMATS from "../FORMATS";
 
 export class Explicit implements Output {

@@ -1,4 +1,4 @@
-import Setting from "./Setting";
+import Setting from "./_Setting";
 
 export class Font implements Setting {
 	private readonly name: string;

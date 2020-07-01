@@ -1,7 +1,7 @@
 import ReadableStream = NodeJS.ReadableStream;
 import WritableStream = NodeJS.WritableStream;
 
-import Input from "./Input";
+import Input from "./_Input";
 import FORMATS from "../FORMATS";
 
 export class STDIN implements Input {

@@ -1,4 +1,4 @@
-import Setting from "./Setting";
+import Setting from "./_Setting";
 
 export class Fill implements Setting {
 	private readonly color: string;

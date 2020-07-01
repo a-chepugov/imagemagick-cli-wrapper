@@ -1,6 +1,6 @@
-import ChannelOperator from "./ChannelOperator";
+import SequenceOperator from "./_SequenceOperator";
 
-export class Separate implements ChannelOperator {
+export class Separate implements SequenceOperator {
 	build(): string[] {
 		return ['-separate'];
 	}

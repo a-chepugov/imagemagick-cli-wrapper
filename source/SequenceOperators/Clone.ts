@@ -1,5 +1,5 @@
 import Item from "../Item";
-import SequenceOperator from "./SequenceOperator";
+import SequenceOperator from "./_SequenceOperator";
 
 export class Clone implements SequenceOperator {
 	private readonly index: number | undefined;

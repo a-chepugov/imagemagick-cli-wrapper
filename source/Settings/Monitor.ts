@@ -1,4 +1,4 @@
-import Setting from "./Setting";
+import Setting from "./_Setting";
 
 export class Monitor implements Setting {
 	build(): string[] {

@@ -1,6 +1,5 @@
-export {Operator} from './Operator';
+import Operator from "./_Operator";
 export * as Annotate from './Annotate';
-export {Crop} from './Crop';
 export {Flip} from './Flip';
 export {Rotate, Shear as RotateShear} from './Rotate';
 export {Resize} from './Resize';

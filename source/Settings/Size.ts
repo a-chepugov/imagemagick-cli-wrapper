@@ -1,4 +1,4 @@
-import Setting from "./Setting";
+import Setting from "./_Setting";
 
 export class Size implements Setting {
 	private readonly width: number;

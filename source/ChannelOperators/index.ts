@@ -1,2 +1,1 @@
-export {ChannelOperator} from './ChannelOperator';
-export {Separate} from './Separate';
+export {_ChannelOperator} from './_ChannelOperator';

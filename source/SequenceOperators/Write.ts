@@ -1,4 +1,4 @@
-import SequenceOperator from "./SequenceOperator";
+import SequenceOperator from "./_SequenceOperator";
 
 export class Write implements SequenceOperator {
 	private readonly filename: string;

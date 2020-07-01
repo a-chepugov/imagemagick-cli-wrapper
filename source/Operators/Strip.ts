@@ -1,4 +1,4 @@
-import Operator from "./Operator";
+import Operator from "./_Operator";
 
 export class Strip implements Operator {
 	build(): string[] {
