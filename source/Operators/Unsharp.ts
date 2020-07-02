@@ -17,9 +17,9 @@ export class Unsharp implements Operator {
 		return [
 			'-unsharp',
 			`${this.radius}`
-			+ (this.sigma ? `x${this.sigma}` : '')
-			+ (this.gain ? `+${this.gain}` : '')
-			+ (this.gain && this.threshold ? `+${this.threshold}` : '')
+			+ (Number.isFinite(this.sigma) ? `x${this.sigma}` : '')
+			+ (Number.isFinite(this.gain) ? `${this.gain < 0 ? '' : '+'}${this.gain}` : '')
+			+ (Number.isFinite(this.gain) && Number.isFinite(this.threshold) ? `${this.threshold < 0 ? '' : '+'}${this.threshold}` : '')
 		]
 	}
 
