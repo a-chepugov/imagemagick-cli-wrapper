@@ -1,6 +1,6 @@
 import Operator from "./_Operator";
 
-export interface Annotate extends Operator{
+export interface Annotate extends Operator {
 }
 
 export default Annotate;
