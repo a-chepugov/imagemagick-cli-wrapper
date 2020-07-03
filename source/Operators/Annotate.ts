@@ -23,7 +23,7 @@ export class Degrees implements Annotate {
 	}
 
 	inspect(): string {
-		return this.build().slice(0, 1).join(' ');
+		return this.build().join(' ');
 	}
 }
 
@@ -47,7 +47,7 @@ export class DegreesXY implements Annotate {
 	}
 
 	inspect(): string {
-		return this.build().slice(0, 2).join(' ');
+		return this.build().join(' ');
 	}
 }
 
@@ -77,7 +77,7 @@ export class DegreesXYTxTy implements Annotate {
 	}
 
 	inspect(): string {
-		return this.build().slice(0, 3).join(' ');
+		return this.build().join(' ');
 	}
 }
 
@@ -102,6 +102,6 @@ export class TxTy implements Annotate {
 	}
 
 	inspect(): string {
-		return this.build().slice(0, 2).join(' ');
+		return this.build().join(' ');
 	}
 }
