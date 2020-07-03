@@ -27,8 +27,8 @@
 		"version:major": "npm version major",
 		"version:minor": "npm version minor",
 		"version:patch": "npm version patch",
-		"preversion": "npm run test && npm run all:build",
-		"prepublish": "npm run test",
+		"preversion": "npm run test",
+		"prepublish": "npm run test && docs:build:clear",
 		"test": "mocha -r ts-node/register source/**/*test.ts"
 	},
 	"devDependencies": {
