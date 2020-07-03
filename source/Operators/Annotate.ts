@@ -69,7 +69,7 @@ export class DegreesXYTxTy implements Annotate {
 	build(): string[] {
 		return [
 			'-annotate',
-			`${this.degreesX}x${this.degreesY}`,
+			`${this.degreesX}x${this.degreesY}` +
 			(this.transformX < 0 ? `${this.transformX}` : `+${this.transformX}`) +
 			(this.transformY < 0 ? `${this.transformY}` : `+${this.transformY}`),
 			this.text
