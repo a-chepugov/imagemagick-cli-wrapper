@@ -12,7 +12,7 @@ export * as Settings from './Settings';
 export * as Operators from './Operators';
 export * as ChannelOperators from './ChannelOperators';
 export * as SequenceOperators from './SequenceOperators';
-export * as Stacks from './Stacks';
+export * as Stacks from './StacksOperations';
 export * as Output from './Output';
 
 export {Parameters} from './Parameters';

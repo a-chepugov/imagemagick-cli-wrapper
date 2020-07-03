@@ -1,1 +1,1 @@
-export {_ChannelOperator} from './_ChannelOperator';
+export {ChannelOperator} from './_ChannelOperator';

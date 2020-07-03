@@ -1,6 +1,6 @@
 import Item from '../Item';
 
-export interface _ChannelOperator extends Item {
+export interface ChannelOperator extends Item {
 }
 
-export default _ChannelOperator;
+export default ChannelOperator;
