@@ -15,7 +15,7 @@ export * as SequenceOperators from './SequenceOperators';
 export * as Stacks from './StacksOperations';
 export * as Output from './Output';
 
-export {Parameters} from './Parameters';
+export * as Options from './Options';
 
 export {FORMATS} from './FORMATS';
 export * as Geometry from './Geometry';
