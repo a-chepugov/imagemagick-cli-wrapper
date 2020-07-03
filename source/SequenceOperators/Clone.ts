@@ -2,10 +2,10 @@ import Item from "../Item";
 import SequenceOperator from "./_SequenceOperator";
 
 export class Clone implements SequenceOperator {
-	private readonly index: number | undefined;
+	private readonly index: string | undefined;
 	private readonly items: Item[];
 
-	constructor(index: number, items: Item[]) {
+	constructor(index: string | undefined, items: Item[]) {
 		this.index = index;
 		this.items = items;
 	}
@@ -35,7 +35,7 @@ export class Clone implements SequenceOperator {
 
 		parameters.push(': ');
 
-		parameters.push(...this.items.map((i:any) => i.inspect()).join(' | '));
+		parameters.push(...this.items.map((i: any) => i.inspect()).join(' | '));
 		parameters.push(' )');
 
 		return parameters.join('');
