@@ -28,20 +28,20 @@ export class Degrees implements Annotate {
 }
 
 export class DegreesXY implements Annotate {
-	private readonly degreesX: number;
-	private readonly degreesY: number;
+	private readonly Xdegrees: number;
+	private readonly Ydegrees: number;
 	private readonly text: string;
 
-	constructor(degreesX: number, degreesY: number, text: string) {
-		this.degreesX = degreesX;
-		this.degreesY = degreesY;
+	constructor(Xdegrees: number, Ydegrees: number, text: string) {
+		this.Xdegrees = Number.isFinite(Xdegrees) ? Xdegrees: 0;
+		this.Ydegrees = Number.isFinite(Ydegrees) ? Ydegrees: 0;
 		this.text = text;
 	}
 
 	build(): string[] {
 		return [
 			'-annotate',
-			`${this.degreesX}x${this.degreesY}`,
+			`${this.Xdegrees}x${this.Ydegrees}`,
 			`${this.text}`
 		];
 	}
@@ -52,24 +52,24 @@ export class DegreesXY implements Annotate {
 }
 
 export class DegreesXYTxTy implements Annotate {
-	private readonly degreesX: number;
-	private readonly degreesY: number;
+	private readonly Xdegrees: number;
+	private readonly Ydegrees: number;
 	private readonly transformX: number;
 	private readonly transformY: number;
 	private readonly text: string;
 
-	constructor(degreesX: number, degreesY: number, transformX: number, transformY: number, text: string) {
-		this.degreesX = degreesX;
-		this.degreesY = degreesY;
-		this.transformX = transformX;
-		this.transformY = transformY;
+	constructor(Xdegrees: number, Ydegrees: number, transformX: number, transformY: number, text: string) {
+		this.Xdegrees = Number.isFinite(Xdegrees) ? Xdegrees: 0;
+		this.Ydegrees = Number.isFinite(Ydegrees) ? Ydegrees: 0;
+		this.transformX = Number.isFinite(transformX) ? transformX: 0;
+		this.transformY = Number.isFinite(transformY) ? transformY: 0;
 		this.text = text;
 	}
 
 	build(): string[] {
 		return [
 			'-annotate',
-			`${this.degreesX}x${this.degreesY}` +
+			`${this.Xdegrees}x${this.Ydegrees}` +
 			(this.transformX < 0 ? `${this.transformX}` : `+${this.transformX}`) +
 			(this.transformY < 0 ? `${this.transformY}` : `+${this.transformY}`),
 			this.text
@@ -87,8 +87,8 @@ export class TxTy implements Annotate {
 	private readonly text: string;
 
 	constructor(transformX: number, transformY: number, text: string) {
-		this.transformX = transformX;
-		this.transformY = transformY;
+		this.transformX = Number.isFinite(transformX) ? transformX: 0;
+		this.transformY = Number.isFinite(transformY) ? transformY: 0;
 		this.text = text;
 	}
 
