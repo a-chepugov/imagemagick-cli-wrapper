@@ -16,6 +16,7 @@ export * as Stacks from './StacksOperations';
 export * as Output from './Output';
 
 export * as Options from './Options';
+export {Convert} from './Convert';
 
 export {FORMATS} from './FORMATS';
 export * as Geometry from './Geometry';
