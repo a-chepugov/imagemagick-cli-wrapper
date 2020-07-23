@@ -13,8 +13,8 @@ export class Options {
 		this.options = [];
 	}
 
-	push(operation: Option) {
-		this.options.push(operation);
+	push(option: Option) {
+		this.options.push(option);
 		return this;
 	}
 
@@ -23,27 +23,27 @@ export class Options {
 		return this;
 	}
 
-	append(operations: Option[]) {
-		this.options.splice(this.options.length, 0, ...operations);
+	append(options: Option[]) {
+		this.options.splice(this.options.length, 0, ...options);
 		return this;
 	}
 
-	prepend(operations: Option[]) {
-		this.options.splice(0, 0, ...operations);
+	prepend(options: Option[]) {
+		this.options.splice(0, 0, ...options);
 		return this;
 	}
 
-	static of(operations: Option[]) {
+	static of(options: Option[]) {
 		return (new Options())
-			.append(operations);
+			.append(options);
 	}
 
 	build(): string[] {
-		return this.options.reduce((result: string[], operation: Option) => result.concat(operation.build()), []);
+		return this.options.reduce((result: string[], option: Option) => result.concat(option.build()), []);
 	}
 
 	inspect() {
-		return this.options.reduce((result: string[], operation: Option) => result.concat(operation.inspect()), []);
+		return this.options.reduce((result: string[], option: Option) => result.concat(option.inspect()), []);
 	}
 }
 
