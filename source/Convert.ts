@@ -27,6 +27,11 @@ export class Convert {
 		return this;
 	}
 
+	append(operations: Option[]) {
+		this.options.splice(this.options.length, 0, ...operations);
+		return this;
+	}
+
 	fork(operations: Option[]) {
 		const thread = new Clone(
 			undefined,
