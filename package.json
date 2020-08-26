@@ -38,6 +38,10 @@
 		"mocha": "^6.2.3",
 		"typedoc": "^0.17.8"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/a-chepugov/imagemagick-cli-wrapper.git"
+	},
 	"optionalDependencies": {
 		"@types/node": "^12.12.54",
 		"typescript": "^3.9.7"
