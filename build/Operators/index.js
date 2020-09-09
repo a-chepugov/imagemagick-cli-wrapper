@@ -6,6 +6,8 @@ Object.defineProperty(exports, "Flip", { enumerable: true, get: function () { re
 var Rotate_1 = require("./Rotate");
 Object.defineProperty(exports, "Rotate", { enumerable: true, get: function () { return Rotate_1.Rotate; } });
 Object.defineProperty(exports, "RotateShear", { enumerable: true, get: function () { return Rotate_1.Shear; } });
+var Repage_1 = require("./Repage");
+Object.defineProperty(exports, "Repage", { enumerable: true, get: function () { return Repage_1.Repage; } });
 var Resize_1 = require("./Resize");
 Object.defineProperty(exports, "Resize", { enumerable: true, get: function () { return Resize_1.Resize; } });
 var Strip_1 = require("./Strip");
