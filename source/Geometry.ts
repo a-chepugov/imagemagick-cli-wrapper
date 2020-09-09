@@ -150,21 +150,35 @@ export class Ratio implements Geometry {
 	}
 }
 
-export class SizeOffset implements Geometry {
-	private readonly sizeX: number;
-	private readonly sizeY: number;
+export class Offset {
 	private readonly offsetX: number;
 	private readonly offsetY: number;
 
-	constructor(sizeX: number, sizeY: number, offsetX: number, offsetY: number) {
-		this.sizeX = sizeX;
-		this.sizeY = sizeY;
+	constructor(offsetX: number = 0, offsetY: number = 0) {
 		this.offsetX = offsetX;
 		this.offsetY = offsetY;
 	}
 
 	build() {
-		return `${this.sizeX}:${this.sizeY}${this.offsetX < 0 ? this.offsetX : `+${this.offsetX}`}${this.offsetY < 0 ? this.offsetY : `+${this.offsetY}`}`;
+		return `${this.offsetX < 0 ? this.offsetX : `+${this.offsetX}`}${this.offsetY < 0 ? this.offsetY : `+${this.offsetY}`}`;
+	}
+
+	inspect(): string {
+		return this.build();
+	}
+}
+
+export class Offsetted implements Geometry {
+	private readonly size: Geometry;
+	private readonly offset: Offset;
+
+	constructor(size: Geometry, offset: Offset) {
+		this.size = size;
+		this.offset = offset;
+	}
+
+	build() {
+		return `${this.size.build()}${this.offset.build()}`;
 	}
 
 	inspect(): string {
