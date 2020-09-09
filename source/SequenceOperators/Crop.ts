@@ -14,7 +14,7 @@ export class Crop implements SequenceOperator {
 
 	build(): string[] {
 		return [
-			'-crop ',
+			'-crop',
 			this.geometry.build() + (this.tiles ? '@' : '') + (this.emphatically ? '!' : '')
 		]
 	}
