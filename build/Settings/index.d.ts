@@ -1,6 +1,7 @@
 export { Setting } from './_Setting';
 export { Antialias } from './Antialias';
 export { Fill } from './Fill';
+export { Colorspace, Type as ColorspaceType } from './Colorspace';
 export { Font } from './Font';
 export { Format } from './Format';
 export { Gravity, Type as GravityType } from './Gravity';
