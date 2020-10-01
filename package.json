@@ -15,7 +15,6 @@
 		"cli"
 	],
 	"scripts": {
-		"prepack": "npm install --production && npm run js:build",
 		"js:build": "tsc",
 		"js:delete": "rm -rf ./build",
 		"js:build:clear": "npm run js:delete && npm run js:build;",
