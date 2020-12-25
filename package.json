@@ -31,17 +31,15 @@
 	"devDependencies": {
 		"@types/chai": "^4.2.12",
 		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.12.54",
 		"chai": "^4.2.0",
 		"mocha": "^6.2.3",
-		"typedoc": "^0.17.8"
+		"typedoc": "^0.17.8",
+		"typescript": "^3.9.7"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/a-chepugov/imagemagick-cli-wrapper.git"
-	},
-	"optionalDependencies": {
-		"@types/node": "^12.12.54",
-		"typescript": "^3.9.7"
 	},
 	"author": "",
 	"license": "ISC"
