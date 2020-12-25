@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Unsharp = exports.Strip = exports.Resize = exports.Repage = exports.RotateShear = exports.Rotate = exports.Flip = exports.Annotate = void 0;
 exports.Annotate = require("./Annotate");
 var Flip_1 = require("./Flip");
 Object.defineProperty(exports, "Flip", { enumerable: true, get: function () { return Flip_1.Flip; } });

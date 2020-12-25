@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Geometry = exports.FORMATS = exports.Convert = exports.Options = exports.Output = exports.Stacks = exports.SequenceOperators = exports.ChannelOperators = exports.Operators = exports.Settings = exports.Input = void 0;
 /**
  * The Anatomy of the Command-line
  * one or more required input filenames.

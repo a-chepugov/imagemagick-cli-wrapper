@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Size = exports.Pointsize = exports.Quality = exports.Monitor = exports.InterlaceType = exports.Interlace = exports.GravityType = exports.Gravity = exports.Format = exports.Font = exports.ColorspaceType = exports.Colorspace = exports.Fill = exports.Antialias = void 0;
 var Antialias_1 = require("./Antialias");
 Object.defineProperty(exports, "Antialias", { enumerable: true, get: function () { return Antialias_1.Antialias; } });
 var Fill_1 = require("./Fill");
