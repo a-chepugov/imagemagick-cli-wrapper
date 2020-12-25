@@ -15,7 +15,6 @@
 		"cli"
 	],
 	"scripts": {
-		"prepack": "npm install --production && npm run js:build",
 		"js:build": "tsc",
 		"js:delete": "rm -rf ./build",
 		"js:build:clear": "npm run js:delete && npm run js:build;",
@@ -23,12 +22,10 @@
 		"docs:build": "typedoc source/index.ts",
 		"docs:delete": "rm -rf ./docs",
 		"docs:build:clear": "npm run docs:delete && npm run docs:build;",
-		"all:build": "npm run js:build:clear && npm run docs:build:clear;",
 		"version:major": "npm version major",
 		"version:minor": "npm version minor",
 		"version:patch": "npm version patch",
 		"preversion": "npm run test",
-		"prepublishOnly": "npm run test && docs:build:clear",
 		"test": "mocha -r ts-node/register source/**/*test.ts"
 	},
 	"devDependencies": {
