@@ -246,4 +246,6 @@ import Item_1 = require("./Item");
 import Item = Item_1.Item;
 import Convert_1 = require("./Convert");
 import Convert = Convert_1.Convert;
-export { Option, Item, Convert };
+import Magick_1 = require("./Magick");
+import Magick = Magick_1.Magick;
+export { Option, Item, Convert, Magick };

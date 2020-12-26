@@ -25,6 +25,9 @@ exports.Item = Item;
 const Convert = require('./Convert').Convert;
 exports.Convert = Convert
 
+const Magick = require('./Magick').Magick;
+exports.Magick = Magick
+
 exports.FORMATS = require('./FORMATS').FORMATS;
 exports.Geometry = require('./Geometry');
 
