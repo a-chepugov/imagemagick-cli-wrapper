@@ -13,10 +13,10 @@ export class Geometry {
  */
 export class Scale implements Geometry {
     /**
-     * @param {number} scale
+     * @param {number|Fx} scale
      */
-    constructor(scale: number);
-    scale: number;
+    constructor(scale: number | Fx);
+    scale: number | Fx;
     build(): string;
 }
 /**
@@ -24,12 +24,12 @@ export class Scale implements Geometry {
  */
 export class ScaleXY implements Geometry {
     /**
-     * @param {number} scaleX
-     * @param {number} scaleY
+     * @param {number|Fx} scaleX
+     * @param {number|Fx} scaleY
      */
-    constructor(scaleX: number, scaleY: number);
-    scaleX: number;
-    scaleY: number;
+    constructor(scaleX: number | Fx, scaleY: number | Fx);
+    scaleX: number | Fx;
+    scaleY: number | Fx;
     build(): string;
 }
 /**
@@ -37,10 +37,10 @@ export class ScaleXY implements Geometry {
  */
 export class Width implements Geometry {
     /**
-     * @param {number} size
+     * @param {number|Fx} size
      */
-    constructor(size: number);
-    size: number;
+    constructor(size: number | Fx);
+    size: number | Fx;
     build(): string;
 }
 /**
@@ -48,10 +48,10 @@ export class Width implements Geometry {
  */
 export class Height implements Geometry {
     /**
-     * @param {number} size
+     * @param {number|Fx} size
      */
-    constructor(size: number);
-    size: number;
+    constructor(size: number | Fx);
+    size: number | Fx;
     build(): string;
 }
 /**
@@ -59,12 +59,12 @@ export class Height implements Geometry {
  */
 export class Maximum implements Geometry {
     /**
-     * @param {number} sizeX
-     * @param {number} sizeY
+     * @param {number|Fx} sizeX
+     * @param {number|Fx} sizeY
      */
-    constructor(sizeX: number, sizeY: number);
-    sizeX: number;
-    sizeY: number;
+    constructor(sizeX: number | Fx, sizeY: number | Fx);
+    sizeX: number | Fx;
+    sizeY: number | Fx;
     build(): string;
 }
 /**
@@ -72,12 +72,12 @@ export class Maximum implements Geometry {
  */
 export class Minimum implements Geometry {
     /**
-     * @param {number} sizeX
-     * @param {number} sizeY
+     * @param {number|Fx} sizeX
+     * @param {number|Fx} sizeY
      */
-    constructor(sizeX: number, sizeY: number);
-    sizeX: number;
-    sizeY: number;
+    constructor(sizeX: number | Fx, sizeY: number | Fx);
+    sizeX: number | Fx;
+    sizeY: number | Fx;
     build(): string;
 }
 /**
@@ -85,12 +85,12 @@ export class Minimum implements Geometry {
  */
 export class Emphatically implements Geometry {
     /**
-     * @param {number} sizeX
-     * @param {number} sizeY
+     * @param {number|Fx} sizeX
+     * @param {number|Fx} sizeY
      */
-    constructor(sizeX: number, sizeY: number);
-    sizeX: number;
-    sizeY: number;
+    constructor(sizeX: number | Fx, sizeY: number | Fx);
+    sizeX: number | Fx;
+    sizeY: number | Fx;
     build(): string;
 }
 /**
@@ -98,12 +98,12 @@ export class Emphatically implements Geometry {
  */
 export class Shrink implements Geometry {
     /**
-     * @param {number} sizeX
-     * @param {number} sizeY
+     * @param {number|Fx} sizeX
+     * @param {number|Fx} sizeY
      */
-    constructor(sizeX: number, sizeY: number);
-    sizeX: number;
-    sizeY: number;
+    constructor(sizeX: number | Fx, sizeY: number | Fx);
+    sizeX: number | Fx;
+    sizeY: number | Fx;
     build(): string;
 }
 /**
@@ -111,12 +111,12 @@ export class Shrink implements Geometry {
  */
 export class Enlarge implements Geometry {
     /**
-     * @param {number} sizeX
-     * @param {number} sizeY
+     * @param {number|Fx} sizeX
+     * @param {number|Fx} sizeY
      */
-    constructor(sizeX: number, sizeY: number);
-    sizeX: number;
-    sizeY: number;
+    constructor(sizeX: number | Fx, sizeY: number | Fx);
+    sizeX: number | Fx;
+    sizeY: number | Fx;
     build(): string;
 }
 /**
@@ -124,10 +124,10 @@ export class Enlarge implements Geometry {
  */
 export class Area implements Geometry {
     /**
-     * @param {number} value
+     * @param {number|Fx} value
      */
-    constructor(value: number);
-    value: number;
+    constructor(value: number | Fx);
+    value: number | Fx;
     build(): string;
 }
 /**
@@ -135,22 +135,22 @@ export class Area implements Geometry {
  */
 export class Ratio implements Geometry {
     /**
-     * @param {number} sizeX
-     * @param {number} sizeY
+     * @param {number|Fx} sizeX
+     * @param {number|Fx} sizeY
      */
-    constructor(sizeX: number, sizeY: number);
-    sizeX: number;
-    sizeY: number;
+    constructor(sizeX: number | Fx, sizeY: number | Fx);
+    sizeX: number | Fx;
+    sizeY: number | Fx;
     build(): string;
 }
 export class Offset {
     /**
-     * @param {number} offsetX
-     * @param {number} offsetY
+     * @param {number|Fx} offsetX
+     * @param {number|Fx} offsetY
      */
-    constructor(offsetX?: number, offsetY?: number);
-    offsetX: number;
-    offsetY: number;
+    constructor(offsetX?: number | Fx, offsetY?: number | Fx);
+    offsetX: number | Fx;
+    offsetY: number | Fx;
     build(): string;
     inspect(): string;
 }
@@ -165,3 +165,5 @@ export class Offsetted {
     build(): string;
     inspect(): string;
 }
+import Fx_1 = require("./Expressions/Fx");
+import Fx = Fx_1.Fx;

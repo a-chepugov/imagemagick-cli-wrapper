@@ -1,3 +1,5 @@
+const Fx = require("./Expressions/Fx").Fx;
+
 /**
  * @interface
  */
@@ -19,7 +21,7 @@ exports.default = Geometry;
  */
 class Scale {
 	/**
-	 * @param {number} scale
+	 * @param {number|Fx} scale
 	 */
 	constructor(scale) {
 		this.scale = scale;
@@ -38,8 +40,8 @@ exports.Scale = Scale;
 class ScaleXY {
 
 	/**
-	 * @param {number} scaleX
-	 * @param {number} scaleY
+	 * @param {number|Fx} scaleX
+	 * @param {number|Fx} scaleY
 	 */
 	constructor(scaleX, scaleY) {
 		this.scaleX = scaleX;
@@ -58,7 +60,7 @@ exports.ScaleXY = ScaleXY;
  */
 class Width {
 	/**
-	 * @param {number} size
+	 * @param {number|Fx} size
 	 */
 	constructor(size) {
 		this.size = size;
@@ -76,7 +78,7 @@ exports.Width = Width;
  */
 class Height {
 	/**
-	 * @param {number} size
+	 * @param {number|Fx} size
 	 */
 	constructor(size) {
 		this.size = size;
@@ -94,8 +96,8 @@ exports.Height = Height;
  */
 class Maximum {
 	/**
-	 * @param {number} sizeX
-	 * @param {number} sizeY
+	 * @param {number|Fx} sizeX
+	 * @param {number|Fx} sizeY
 	 */
 	constructor(sizeX, sizeY) {
 		this.sizeX = sizeX;
@@ -114,8 +116,8 @@ exports.Maximum = Maximum;
  */
 class Minimum {
 	/**
-	 * @param {number} sizeX
-	 * @param {number} sizeY
+	 * @param {number|Fx} sizeX
+	 * @param {number|Fx} sizeY
 	 */
 	constructor(sizeX, sizeY) {
 		this.sizeX = sizeX;
@@ -134,8 +136,8 @@ exports.Minimum = Minimum;
  */
 class Emphatically {
 	/**
-	 * @param {number} sizeX
-	 * @param {number} sizeY
+	 * @param {number|Fx} sizeX
+	 * @param {number|Fx} sizeY
 	 */
 	constructor(sizeX, sizeY) {
 		this.sizeX = sizeX;
@@ -154,8 +156,8 @@ exports.Emphatically = Emphatically;
  */
 class Shrink {
 	/**
-	 * @param {number} sizeX
-	 * @param {number} sizeY
+	 * @param {number|Fx} sizeX
+	 * @param {number|Fx} sizeY
 	 */
 	constructor(sizeX, sizeY) {
 		this.sizeX = sizeX;
@@ -174,8 +176,8 @@ exports.Shrink = Shrink;
  */
 class Enlarge {
 	/**
-	 * @param {number} sizeX
-	 * @param {number} sizeY
+	 * @param {number|Fx} sizeX
+	 * @param {number|Fx} sizeY
 	 */
 	constructor(sizeX, sizeY) {
 		this.sizeX = sizeX;
@@ -194,7 +196,7 @@ exports.Enlarge = Enlarge;
  */
 class Area {
 	/**
-	 * @param {number} value
+	 * @param {number|Fx} value
 	 */
 	constructor(value) {
 		this.value = value;
@@ -212,8 +214,8 @@ exports.Area = Area;
  */
 class Ratio {
 	/**
-	 * @param {number} sizeX
-	 * @param {number} sizeY
+	 * @param {number|Fx} sizeX
+	 * @param {number|Fx} sizeY
 	 */
 	constructor(sizeX, sizeY) {
 		this.sizeX = sizeX;
@@ -229,8 +231,8 @@ exports.Ratio = Ratio;
 
 class Offset {
 	/**
-	 * @param {number} offsetX
-	 * @param {number} offsetY
+	 * @param {number|Fx} offsetX
+	 * @param {number|Fx} offsetY
 	 */
 	constructor(offsetX = 0, offsetY = 0) {
 		this.offsetX = offsetX;

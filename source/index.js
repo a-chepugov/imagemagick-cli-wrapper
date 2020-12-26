@@ -27,3 +27,5 @@ exports.Convert = Convert
 
 exports.FORMATS = require('./FORMATS').FORMATS;
 exports.Geometry = require('./Geometry');
+
+exports.Expressions = require('./Expressions');
