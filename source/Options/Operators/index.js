@@ -1,0 +1,9 @@
+exports.Operator = require('./_Operator').Operator;
+exports.Annotate = require('./Annotate');
+exports.Flip = require('./Flip').Flip;
+exports.Rotate = require('./Rotate').Rotate;
+exports.RotateShear = require('./Rotate').Shear;
+exports.Repage = require('./Repage').Repage;
+exports.Resize = require('./Resize').Resize;
+exports.Strip = require('./Strip').Strip;
+exports.Unsharp = require('./Unsharp').Unsharp;

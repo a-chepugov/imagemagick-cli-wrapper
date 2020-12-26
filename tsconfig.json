@@ -2,10 +2,13 @@
 	"compileOnSave": true,
 	"compilerOptions": {
 		"rootDir": "source",
-		"outDir": "build",
+		"outDir": "typings",
 		"module": "commonjs",
 		"target": "ES2015",
+		"allowJs": true,
+		"checkJs": true,
 		"declaration": true,
+		"emitDeclarationOnly": true,
 		"alwaysStrict": true,
 		"noImplicitAny": true,
 		"removeComments": false,
@@ -15,7 +18,7 @@
 		"pretty": true
 	},
 	"files": [
-		"./source/index.ts"
+		"./source/index.js"
 	],
 	"exclude": [
 		"./*.js",
