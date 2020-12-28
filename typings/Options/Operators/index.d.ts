@@ -1,6 +1,7 @@
 export var Operator: typeof import("./_Operator").Operator;
 export var Annotate: typeof import("./Annotate");
 export var Flip: typeof import("./Flip").Flip;
+export var Modulate: typeof import("./Modulate").Modulate;
 export var Rotate: typeof import("./Rotate").Rotate;
 export var RotateShear: {
     '>': string;
