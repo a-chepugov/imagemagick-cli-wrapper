@@ -250,18 +250,21 @@ class Offset {
 
 exports.Offset = Offset;
 
+/**
+ * @implements {Geometry}
+ */
 class Offsetted {
 	/**
 	 * @param {Geometry} size
 	 * @param {Offset} offset
 	 */
-	constructor(size, offset) {
+	constructor(size = undefined, offset = undefined) {
 		this.size = size;
 		this.offset = offset;
 	}
 
 	build() {
-		return `${this.size.build()}${this.offset.build()}`;
+		return `${this.size ? this.size.build() : ''}${this.offset ? this.offset.build() : ''}`;
 	}
 
 	inspect() {

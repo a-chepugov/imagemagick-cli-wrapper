@@ -154,12 +154,15 @@ export class Offset {
     build(): string;
     inspect(): string;
 }
-export class Offsetted {
+/**
+ * @implements {Geometry}
+ */
+export class Offsetted implements Geometry {
     /**
      * @param {Geometry} size
      * @param {Offset} offset
      */
-    constructor(size: Geometry, offset: Offset);
+    constructor(size?: Geometry, offset?: Offset);
     size: Geometry;
     offset: Offset;
     build(): string;
