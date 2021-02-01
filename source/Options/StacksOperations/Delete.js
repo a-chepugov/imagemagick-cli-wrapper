@@ -1,7 +1,7 @@
-const SequenceOperator = require('./_SequenceOperator').SequenceOperator;
+const StacksOperation = require('./_StacksOperation').StacksOperation;
 
 /**
- * @implements {SequenceOperator}
+ * @implements {StacksOperation}
  */
 class Delete {
 	/**
