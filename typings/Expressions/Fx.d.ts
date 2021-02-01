@@ -1,4 +1,7 @@
 export default Fx;
+/**
+ * @description fx expression builder
+ */
 export class Fx {
     /**
      * @param {string} expression

@@ -4,7 +4,7 @@
 		"rootDir": "source",
 		"outDir": "typings",
 		"module": "commonjs",
-		"target": "ES2015",
+		"target": "ESNext",
 		"allowJs": true,
 		"checkJs": true,
 		"declaration": true,

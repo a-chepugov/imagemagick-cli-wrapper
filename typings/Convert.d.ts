@@ -1,4 +1,7 @@
 export default Convert;
+/**
+ * @description `Convert` command builder
+ */
 export class Convert {
     /**
      * @param {Input} input

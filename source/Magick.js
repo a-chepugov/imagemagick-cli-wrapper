@@ -1,5 +1,5 @@
 'use strict';
-const {Clone, Delete} = require('./Options/SequenceOperators');
+const {Clone, Delete, Group} = require('./Options/StacksOperations');
 const Option = require('./Options/Option').Option;
 const Options = require('./Options/Options').Options;
 const Input = require('./Input').Input;
@@ -52,7 +52,7 @@ class Magick {
 	 * @param {Array<Option>} options
 	 */
 	fork(options) {
-		const thread = new Clone(undefined, options.concat(new Delete()));
+		const thread = new Group([new Clone(), ...options, new Delete()]);
 		this.options.push(thread);
 		return this;
 	}
