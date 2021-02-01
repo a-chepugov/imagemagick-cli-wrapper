@@ -223,7 +223,7 @@ class Ratio {
 	}
 
 	build() {
-		return `${this.sizeX}:${this.sizeY}^`;
+		return `${this.sizeX}:${this.sizeY}`;
 	}
 }
 
