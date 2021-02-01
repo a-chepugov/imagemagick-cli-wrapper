@@ -1,4 +1,7 @@
 export default Magick;
+/**
+ * @description `Magick` command builder
+ */
 export class Magick {
     /**
      * @param {Input} input
