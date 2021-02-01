@@ -1,3 +1,6 @@
+/**
+ * @description fx expression builder
+ */
 class Fx {
 	/**
 	 * @param {string} expression

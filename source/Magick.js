@@ -1,10 +1,13 @@
 'use strict';
-const {Clone, Delete} = require("./Options/SequenceOperators");
-const Option = require("./Options/Option").Option;
-const Options = require("./Options/Options").Options;
-const Input = require("./Input").Input;
-const Output = require("./Output").Output;
+const {Clone, Delete} = require('./Options/SequenceOperators');
+const Option = require('./Options/Option').Option;
+const Options = require('./Options/Options').Options;
+const Input = require('./Input').Input;
+const Output = require('./Output').Output;
 
+/**
+ * @description `Magick` command builder
+ */
 class Magick {
 	constructor() {
 		/**

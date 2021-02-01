@@ -1,5 +1,5 @@
 const SequenceOperator = require('./_SequenceOperator').SequenceOperator;
-const Option= require('../Option').Option;
+const Option = require('../Option').Option;
 
 /**
  * @implements {SequenceOperator}

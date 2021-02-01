@@ -1,4 +1,4 @@
-const Option= require('../Option').Option;
+const Option = require('../Option').Option;
 
 /**
  * @interface
