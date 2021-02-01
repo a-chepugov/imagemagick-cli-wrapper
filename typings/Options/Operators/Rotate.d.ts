@@ -15,7 +15,7 @@ export class Rotate implements Operator {
      * @param {number} degrees
      * @param {Shear} shear
      */
-    constructor(degrees: number, shear: Shear);
+    constructor(degrees: number, shear?: Shear);
     degrees: number;
     shear: string;
     build(): string[];

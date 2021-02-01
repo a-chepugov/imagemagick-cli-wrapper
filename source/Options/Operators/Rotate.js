@@ -18,7 +18,7 @@ class Rotate {
 	 * @param {number} degrees
 	 * @param {Shear} shear
 	 */
-	constructor(degrees, shear) {
+	constructor(degrees, shear = undefined) {
 		this.degrees = degrees;
 		this.shear = shear;
 	}
