@@ -1,5 +1,6 @@
 export var Setting: typeof import("./_Setting").Setting;
 export var Antialias: typeof import("./Antialias").Antialias;
+export var Background: typeof import("./Background").Background;
 export var Fill: typeof import("./Fill").Fill;
 export var Colorspace: typeof import("./Colorspace").Colorspace;
 export var ColorspaceType: {

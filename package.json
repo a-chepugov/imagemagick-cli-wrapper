@@ -1,6 +1,6 @@
 {
 	"name": "imagemagick-cli-wrapper",
-	"version": "4.0.3",
+	"version": "4.1.0",
 	"description": "",
 	"main": "source/index.js",
 	"typings": "typings/index.d.ts",

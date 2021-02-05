@@ -1,5 +1,6 @@
 exports.Setting = require('./_Setting').Setting;
 exports.Antialias = require('./Antialias').Antialias;
+exports.Background = require('./Background').Background;
 exports.Fill = require('./Fill').Fill;
 exports.Colorspace = require('./Colorspace').Colorspace;
 exports.ColorspaceType = require('./Colorspace').Type;
