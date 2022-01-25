@@ -239,6 +239,7 @@ export var FORMATS: {
     YUV: string;
 };
 export var Geometry: typeof import("./Geometry");
+export var Primitives: typeof import("./Primitives");
 export var Expressions: typeof import("./Expressions");
 import Option_1 = require("./Options/Option");
 import Option = Option_1.Option;

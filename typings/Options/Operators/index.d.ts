@@ -1,5 +1,6 @@
 export var Operator: typeof import("./_Operator").Operator;
 export var Annotate: typeof import("./Annotate");
+export var Draw: typeof import("./Draw").Draw;
 export var Extent: typeof import("./Extent").Extent;
 export var Flip: typeof import("./Flip").Flip;
 export var Geometry: typeof import("./Geometry").Geometry;

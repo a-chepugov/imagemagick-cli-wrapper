@@ -1,5 +1,6 @@
 exports.Operator = require('./_Operator').Operator;
 exports.Annotate = require('./Annotate');
+exports.Draw = require('./Draw').Draw;
 exports.Extent = require('./Extent').Extent;
 exports.Flip = require('./Flip').Flip;
 exports.Geometry = require('./Geometry').Geometry;

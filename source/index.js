@@ -30,5 +30,6 @@ exports.Magick = Magick
 
 exports.FORMATS = require('./FORMATS').FORMATS;
 exports.Geometry = require('./Geometry');
+exports.Primitives = require('./Primitives');
 
 exports.Expressions = require('./Expressions');
