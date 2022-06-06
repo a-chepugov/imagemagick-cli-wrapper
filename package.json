@@ -17,6 +17,7 @@
 	"scripts": {
 		"lint": "eslint source/**/*.js",
 		"lint:fix": "eslint --fix source/**/*.js",
+		"build": "npm run declarations:build:clear",
 		"declarations:build": "tsc",
 		"declarations:delete": "rm -rf ./typings",
 		"declarations:build:clear": "npm run declarations:delete && npm run declarations:build;",
