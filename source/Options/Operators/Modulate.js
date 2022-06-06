@@ -5,25 +5,29 @@ const Operator = require('./_Operator').Operator;
  */
 class Modulate {
 	/**
-	 * @param {number} brightness
-	 * @param {number=} saturation
-	 * @param {number=} hue
+	 * @param {number} [brightness=100]
+	 * @param {number} [saturation=100]
+	 * @param {number} [hue=100]
 	 */
 	constructor(brightness, saturation, hue) {
 		/** @private */
-		this.brightness = brightness;
+		this.brightness = Number.isFinite(brightness) ? Math.trunc(brightness) : 100;
 		/** @private */
-		this.saturation = saturation;
+		this.saturation = Number.isFinite(saturation) ? Math.trunc(saturation) : 100;
 		/** @private */
-		this.hue = hue;
+		this.hue = Number.isFinite(hue) ? Math.trunc(hue) : 100;
+
+		Object.freeze(this);
 	}
 
 	build() {
 		return [
 			'-modulate',
-			`${this.brightness}` +
-			this.saturation !== undefined ? `,${this.saturation}` : '' +
-			this.hue !== undefined ? `,${this.hue}` : ''
+			[
+				this.brightness,
+				this.saturation,
+				this.hue,
+			].join(',')
 		];
 	}
 
@@ -34,3 +38,4 @@ class Modulate {
 
 exports.Modulate = Modulate;
 exports.default = Modulate;
+

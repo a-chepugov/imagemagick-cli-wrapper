@@ -4,11 +4,11 @@ export default Modulate;
  */
 export class Modulate implements Operator {
     /**
-     * @param {number} brightness
-     * @param {number=} saturation
-     * @param {number=} hue
+     * @param {number} [brightness=100]
+     * @param {number} [saturation=100]
+     * @param {number} [hue=100]
      */
-    constructor(brightness: number, saturation?: number | undefined, hue?: number | undefined);
+    constructor(brightness?: number, saturation?: number, hue?: number);
     /** @private */
     private brightness;
     /** @private */
