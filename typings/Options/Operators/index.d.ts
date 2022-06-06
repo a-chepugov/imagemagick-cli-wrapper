@@ -1,6 +1,7 @@
 export var Operator: typeof import("./_Operator").Operator;
 export var Annotate: typeof import("./Annotate");
 export var AutoOrient: typeof import("./AutoOrient").AutoOrient;
+export var BrightnessContrast: typeof import("./BrightnessContrast").BrightnessContrast;
 export var Draw: typeof import("./Draw").Draw;
 export var Extent: typeof import("./Extent").Extent;
 export var Flip: typeof import("./Flip").Flip;
