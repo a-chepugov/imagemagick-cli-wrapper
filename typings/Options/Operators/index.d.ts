@@ -6,6 +6,25 @@ export var Draw: typeof import("./Draw").Draw;
 export var Extent: typeof import("./Extent").Extent;
 export var Flip: typeof import("./Flip").Flip;
 export var Geometry: typeof import("./Geometry").Geometry;
+export var Layers: typeof import("./Layers").Layers;
+export var LayersMethod: {
+    Coalesce: string;
+    CompareAny: string;
+    CompareClear: string;
+    CompareOverlay: string;
+    Dispose: string;
+    Optimize: string;
+    OptimizeFrame: string;
+    OptimizePlus: string;
+    OptimizeTransparency: string;
+    RemoveDups: string;
+    RemoveZero: string;
+    Composite: string;
+    Merge: string;
+    Flatten: string;
+    Mosaic: string;
+    TrimBounds: string;
+};
 export var Modulate: typeof import("./Modulate").Modulate;
 export var Rotate: typeof import("./Rotate").Rotate;
 export var RotateShear: {
