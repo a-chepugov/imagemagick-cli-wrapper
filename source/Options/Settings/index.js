@@ -13,4 +13,5 @@ exports.InterlaceType = require('./Interlace').Type;
 exports.Monitor = require('./Monitor').Monitor;
 exports.Quality = require('./Quality').Quality;
 exports.Pointsize = require('./Pointsize').Pointsize;
+exports.Region = require('./Region').default;
 exports.Size = require('./Size').Size;
