@@ -1,6 +1,7 @@
 exports.Operator = require('./_Operator').Operator;
 exports.Annotate = require('./Annotate');
 exports.AutoOrient = require('./AutoOrient').AutoOrient;
+exports.Blur = require('./Blur').default;
 exports.BrightnessContrast = require('./BrightnessContrast').BrightnessContrast;
 exports.Draw = require('./Draw').Draw;
 exports.Extent = require('./Extent').Extent;
