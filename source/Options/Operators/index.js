@@ -4,6 +4,7 @@ exports.AutoOrient = require('./AutoOrient').AutoOrient;
 exports.Blur = require('./Blur').default;
 exports.BrightnessContrast = require('./BrightnessContrast').BrightnessContrast;
 exports.Draw = require('./Draw').Draw;
+exports.Colorize = require('./Colorize').default;
 exports.Extent = require('./Extent').Extent;
 exports.Flip = require('./Flip').Flip;
 exports.Geometry = require('./Geometry').Geometry;
