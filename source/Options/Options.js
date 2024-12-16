@@ -61,7 +61,7 @@ class Options {
 	}
 
 	* [Symbol.iterator]() {
-		return yield * this.options;
+		return yield* this.options;
 	}
 }
 

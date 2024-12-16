@@ -1,5 +1,5 @@
 const Operator = require('./_Operator').Operator;
-const Geometry = require('../../Geometry').Geometry
+const Geometry = require('../../Geometry').Geometry;
 
 /**
  * @implements {Operator}
