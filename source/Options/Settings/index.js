@@ -15,3 +15,4 @@ exports.Quality = require('./Quality').Quality;
 exports.Pointsize = require('./Pointsize').Pointsize;
 exports.Region = require('./Region').default;
 exports.Size = require('./Size').Size;
+exports.WriteMask = require('./WriteMask').default;

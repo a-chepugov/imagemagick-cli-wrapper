@@ -69,3 +69,4 @@ export var Quality: typeof import("./Quality").Quality;
 export var Pointsize: typeof import("./Pointsize").Pointsize;
 export var Region: typeof import("./Region").Region;
 export var Size: typeof import("./Size").Size;
+export var WriteMask: typeof import("./WriteMask").WriteMask;
