@@ -2,6 +2,9 @@ const StacksOperation = require('./_StacksOperation').StacksOperation;
 
 /**
  * @implements {StacksOperation}
+ * @description клонирует копию изображения или канала
+ * -clone 0 - выполняет клонирование поиндесу
+ * +clone - выполняет клонирование последней копии
  */
 class Clone {
 	/**

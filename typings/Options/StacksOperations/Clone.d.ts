@@ -1,6 +1,9 @@
 export default Clone;
 /**
  * @implements {StacksOperation}
+ * @description клонирует копию изображения или канала
+ * -clone 0 - выполняет клонирование поиндесу
+ * +clone - выполняет клонирование последней копии
  */
 export class Clone implements StacksOperation {
     /**
